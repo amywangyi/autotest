@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="testSuite" parallel="tests" thread-count="1">
+	<parameter name="browser" value="chrome" />
+	<parameter name="baseUrl" value="http://mall-test.ca-b2b.com/index" />
+	<parameter name="supplierName" value="gUCCI" />
+	<parameter name="supplierNameNoResult" value="sdfsdfs" />
+    <parameter name="associativeKeyword" value="t" />
+		<test name="MallSuppliersSearch" enabled="true">
+		<classes>
+			<class name="com.xc.autotest.testcase.MallSuppliersSearch" >
+			    <methods preserve-order="true">
+			    <include name="searchWithResult" ></include>
+			     <include name="searchWithNoResult" ></include>
+			     <include name="associativeFunction" ></include>
+			        </methods>
+			     </class>
+		</classes>		
+	</test>
+	
+</suite> <!-- Suite -->

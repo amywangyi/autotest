@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="testSuite" parallel="tests" thread-count="1">
+	<parameter name="browser" value="chrome" />
+	<parameter name="baseUrl" value=""/>
+	<parameter name="homeUrl" value="http://ht.agent.boleme.net/#/login" />
+	<parameter name="username" value="DL1805704" />
+	<parameter name="password" value="Aa123456" />
+	<parameter name="employeeName" value="张三"/>
+		<!--  创建代理商员工账号 -->
+		<test name="createEmployee">
+		<classes>
+			<class name="com.xc.autotest.testcase.EmployeeOperation" />
+			   <methods preserve-order="true"/>
+		</classes>		
+	</test>
+	
+</suite> <!-- Suite -->
